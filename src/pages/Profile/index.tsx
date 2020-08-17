@@ -23,6 +23,7 @@ import Button from '../../components/Button';
 
 import {
   Container,
+  Header,
   Title,
   BackButton,
   UserAvatar,
@@ -172,13 +173,15 @@ const SignUp: React.FC = () => {
           contentContainerStyle={{ flex: 1 }}
         >
           <Container>
-            <BackButton onPress={handleGoBack}>
-              <Icon name="chevron-left" size={24} color="#999591" />
-            </BackButton>
+            <Header>
+              <BackButton onPress={handleGoBack}>
+                <Icon name="chevron-left" size={24} color="#999591" />
+              </BackButton>
 
-            <UserAvatarButton onPress={handleUpdateAvatar}>
-              <UserAvatar source={{ uri: user.avatar_url }} />
-            </UserAvatarButton>
+              <UserAvatarButton onPress={handleUpdateAvatar}>
+                <UserAvatar source={{ uri: user.avatar_url }} />
+              </UserAvatarButton>
+            </Header>
 
             <View>
               <Title>Meu perfil</Title>

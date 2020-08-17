@@ -18,6 +18,16 @@ export const Header = styled.View`
   align-items: center;
 `;
 
+export const HeaderLogout = styled.View`
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const LogoutButton = styled.TouchableOpacity`
+  margin-right: 10px;
+`;
+
 export const HeaderTitle = styled.Text`
   color: #f4ede8;
   font-size: 20px;
